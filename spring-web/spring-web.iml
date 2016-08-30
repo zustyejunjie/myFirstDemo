@@ -59,5 +59,6 @@
     <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.12" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:log4j-over-slf4j:1.7.12" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.6" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
   </component>
 </module>
