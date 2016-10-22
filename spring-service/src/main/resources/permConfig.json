@@ -1,0 +1,35 @@
+[
+  {
+    "spaceType":"Class",
+    "value":{
+      "space":{
+        "browse":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "comment":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "publish":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "praise":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "workCircle":[{"roleType":"all","isChecked":"1","isCancel":"1"}]
+      },"schoolCircle":""}},
+
+  {
+    "spaceType":"Student",
+    "value":{
+      "space":{
+        "browse":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "comment":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "publish":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "praise":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "workCircle":[{"roleType":"all","isChecked":"1","isCancel":"1"}]
+      },"schoolCircle":""}},
+
+  {
+    "spaceType":"School",
+    "value":{
+      "space":{
+        "browse":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "comment":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "publish":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "praise":[{"roleType":"all","isChecked":"1","isCancel":"1"}],
+        "workCircle":[{"roleType":"all","isChecked":"1","isCancel":"1"}]
+      },"schoolCircle":""}}
+
+]
