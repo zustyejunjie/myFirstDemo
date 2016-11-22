@@ -8,6 +8,47 @@
     <artifactId>springTest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
+    <!--版本统一配置-->
+    <properties>
+        <springframework.version>4.1.6.RELEASE</springframework.version>
+        <springframework.security.version>3.2.0.RELEASE</springframework.security.version>
+        <spring.jackson.version>2.4.2</spring.jackson.version>
+        <h2.version>1.3.166</h2.version>
+        <slf4j.version>1.7.12</slf4j.version>
+        <logback.version>1.1.3</logback.version>
+        <mybatis.version>3.2.8</mybatis.version>
+        <mybatis.spring.version>1.1.1</mybatis.spring.version>
+        <mybatis.generator.verison>1.3.2</mybatis.generator.verison>
+        <velocity.version>1.7</velocity.version>
+        <velocity.toolview.version>1.4</velocity.toolview.version>
+        <commons.logging.version>1.2</commons.logging.version>
+        <commons.collections.version>3.2.1</commons.collections.version>
+        <commons.lang.version>2.6</commons.lang.version>
+        <commons.lang3.version>3.4</commons.lang3.version>
+        <commons.beanutils.version>1.8.3</commons.beanutils.version>
+        <commons.digester.version>1.7</commons.digester.version>
+        <junit.version>4.10</junit.version>
+        <compiler.version>1.7</compiler.version>
+        <plugin.compiler.version>2.1</plugin.compiler.version>
+        <jetty.plugin.version>6.1.10</jetty.plugin.version>
+        <mysql.jdbc.version>5.1.25</mysql.jdbc.version>
+        <zookeeper_version>3.4.6</zookeeper_version>
+        <zkclient_version>0.1</zkclient_version>
+        <dubbox.version>2.8.4</dubbox.version>
+        <tomcat.embed.version>8.0.11</tomcat.embed.version>
+        <tomcat.jdbc.pool>7.0.62</tomcat.jdbc.pool>
+        <kryo.version>2.24.0</kryo.version>
+        <kryo.serializers.version>0.26</kryo.serializers.version>
+        <maven.dependency.plugin.version>2.8</maven.dependency.plugin.version>
+        <cas.client.core.version>3.1.12</cas.client.core.version>
+        <hadoop.hdfs.version>2.7.0</hadoop.hdfs.version>
+        <jpopulator.version>1.2.0</jpopulator.version>
+        <super.diamond.version>1.1.0-SNAPSHOT</super.diamond.version>
+        <cxf.version>3.1.0</cxf.version>
+        <openapi.webservice.version>1.0-SNAPSHOT</openapi.webservice.version>
+    </properties>
+
     <dependencies>
 
         <!--guava 瓜娃-->
@@ -35,6 +76,47 @@
             <version>2.5</version>
         </dependency>
 
+
+
+
+
+        <!--spring依赖-->
+        <!--spring framework-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-framework-bom</artifactId>
+            <version>${springframework.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        <!--spring security-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-bom</artifactId>
+            <version>${springframework.security.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        <!--spring json-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${spring.jackson.version}</version>
+        </dependency>
+
+        <!--redis依赖-->
+        <!--redis data-->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+            <version>1.0.1.RELEASE</version>
+        </dependency>
+        <!--embeded-redis-->
+        <dependency>
+            <groupId>com.orange.redis-embedded</groupId>
+            <artifactId>embedded-redis</artifactId>
+            <version>0.5</version>
+        </dependency>
     </dependencies>
 
 </project>
