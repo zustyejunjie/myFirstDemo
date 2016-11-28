@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.xuele</groupId>
-    <artifactId>springTest</artifactId>
+    <artifactId>springTest-service</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
@@ -86,16 +86,12 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-framework-bom</artifactId>
             <version>${springframework.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
         </dependency>
         <!--spring security-->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-bom</artifactId>
             <version>${springframework.security.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
         </dependency>
         <!--spring json-->
         <dependency>
@@ -117,6 +113,28 @@
             <artifactId>embedded-redis</artifactId>
             <version>0.5</version>
         </dependency>
+
+
+        <dependency>
+            <groupId>net.xuele</groupId>
+            <artifactId>springTest-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--dubbox core-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbox.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>
