@@ -1,0 +1,41 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+    <bean id="optlogger" class="net.xuele.spring.aop.OptLogger"></bean>
+    <bean id="userserivce" class="net.xuele.spring.aop.UserServiceImpl"></bean>
+
+    <!--execution表达式-->
+    <!--<aop:config>-->
+    <!--<aop:pointcut id="servicepointcut" expression="execution(* net.xuele.spring.aop.*.*(..))"/>-->
+    <!--<aop:aspect id="loggeraspect" ref="optlogger">-->
+    <!--<aop:around method="logger" pointcut-ref="servicepointcut"/>-->
+    <!--</aop:aspect>-->
+    <!--</aop:config>-->
+
+
+    <!--5中通知类型（包含上面的around）-->
+    <!--<bean id="aopbean" class="net.xuele.spring.aop.AopBean"></bean>-->
+    <!--<aop:config>-->
+    <!--<aop:pointcut id="servicepointcut" expression="within (net.xuele.spring.aop.*)"/>-->
+    <!--<aop:aspect id="aspectbean" ref="aopbean">-->
+    <!--<aop:before method="mybefore" pointcut-ref="servicepointcut"/>-->
+    <!--<aop:after-returning method="myafterReturning" returning="retVal" pointcut-ref="servicepointcut"/>-->
+    <!--<aop:after-throwing method="myafterException" throwing="ex" pointcut-ref="servicepointcut"/>-->
+    <!--<aop:after method="myafter" pointcut-ref="servicepointcut"/>-->
+    <!--</aop:aspect>-->
+    <!--</aop:config>-->
+
+
+    <!--记录异常日志-->
+    <bean id="exceptionLog" class="net.xuele.spring.aop.ExceptionLogger"></bean>
+    <aop:config>
+        <aop:pointcut id="servicepointcut" expression="within (net.xuele.spring.aop.*)"/>
+        <aop:aspect id="aspectbean" ref="exceptionLog">
+            <aop:after-throwing method="log" throwing="e" pointcut-ref="servicepointcut"/>
+        </aop:aspect>
+    </aop:config>
+
+
+</beans>
