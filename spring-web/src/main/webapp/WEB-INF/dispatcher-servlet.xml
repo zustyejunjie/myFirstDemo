@@ -16,7 +16,7 @@
        </bean>
 
        <!--定义拦截器，用于对请求之前之后的操作-->
-       <!--<mvc:interceptors>-->
-              <!--<bean class="net.xuele.interceptor.LogRecorder"/>-->
-       <!--</mvc:interceptors>-->
+       <mvc:interceptors>
+              <bean class="net.xuele.common.LogRecorder"/>
+       </mvc:interceptors>
 </beans>
