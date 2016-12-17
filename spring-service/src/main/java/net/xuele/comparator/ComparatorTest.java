@@ -1,6 +1,5 @@
 package net.xuele.comparator;
 
-import com.alibaba.dubbo.common.utils.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
