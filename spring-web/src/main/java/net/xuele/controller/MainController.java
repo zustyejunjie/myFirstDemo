@@ -38,11 +38,6 @@ public class MainController {
 
         Student student = new Student();
 
-        student.setId("id1");
-        student.setName("yjj");
-
-        modelAndView.addObject("attr1","attr1");
-
         return student;
 
     }

@@ -20,7 +20,6 @@ public class LogRecorder extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
-        System.out.print("");
         return true;
 
     }
@@ -31,7 +30,6 @@ public class LogRecorder extends HandlerInterceptorAdapter {
             HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)
             throws Exception {
 
-        System.out.println("aaaa");
     }
 
 
