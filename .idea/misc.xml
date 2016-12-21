@@ -9,14 +9,5 @@
     <file type="web" url="file://$PROJECT_DIR$/spring-web" />
   </component>
   <component name="IdProvider" IDEtalkID="9E66963868C3188135C21773EAA3362E" />
-  <component name="MavenProjectsManager">
-    <option name="originalFiles">
-      <list>
-        <option value="$PROJECT_DIR$/spring-service/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-web/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-api/pom.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK" />
 </project>

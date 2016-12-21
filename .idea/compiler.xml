@@ -24,9 +24,6 @@
         <processorPath useClasspath="true" />
         <module name="fff" />
         <module name="qqqq" />
-        <module name="spring-api" />
-        <module name="spring-service" />
-        <module name="spring-web" />
       </profile>
     </annotationProcessing>
   </component>
