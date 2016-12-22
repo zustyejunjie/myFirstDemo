@@ -37,6 +37,8 @@ public class ComparatorTest {
         });
 
         System.out.print(list.toString());
+
+        System.out.print("aaaa");
     }
 
 }
