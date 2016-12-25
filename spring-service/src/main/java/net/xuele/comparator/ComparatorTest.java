@@ -38,7 +38,7 @@ public class ComparatorTest {
 
         System.out.print(list.toString());
 
-        System.out.print("aaaa111");
+        System.out.print("aaaa111 iss53 合并");
     }
 
 }
