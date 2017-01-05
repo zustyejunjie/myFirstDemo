@@ -4,8 +4,8 @@ package net.xuele.spring.aop;
 import org.aspectj.lang.ProceedingJoinPoint;
 
 /** 通过 ProceedingJoinPoint 来获取类名方法名的信息  只有环绕通知才能有此入参
- * Created by yejunjie on 2016/12/6.
- */
+* Created by yejunjie on 2016/12/6.
+*/
 public class OptLogger {
 
     public Object logger(ProceedingJoinPoint pjp) throws Throwable {

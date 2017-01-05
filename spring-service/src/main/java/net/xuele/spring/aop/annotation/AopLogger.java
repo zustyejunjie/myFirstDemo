@@ -7,8 +7,8 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by yejunjie on 2016/12/7.
- */
+* Created by yejunjie on 2016/12/7.
+*/
 @Component("aopLogger")
 @Aspect //声明是
 public class AopLogger {
