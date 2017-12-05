@@ -30,13 +30,11 @@ public class CuratorDistrLockTest {
         System.out.println("zk client start successfully!");
 
         Thread t1 = new Thread(new Runnable() {
-            @Override
             public void run() {
                 doWithLock(client);
             }
         }, "t1");
         Thread t2 = new Thread(new Runnable() {
-            @Override
             public void run() {
                 doWithLock(client);
             }

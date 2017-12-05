@@ -29,7 +29,6 @@ public class ComparatorTest {
 
         //sort 升序排列   reverse 降序排列    修改 o1和o2的位置 可以翻转排序方式
         Collections.sort(list, new Comparator<Student>() {
-            @Override
             public int compare(Student o1, Student o2) {
                 //compareTo  o1>o2 返回正数  比较通过char比较  so 3100 < 390
                 return  o1.getId().compareTo(o2.getId());

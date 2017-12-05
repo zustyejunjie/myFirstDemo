@@ -87,17 +87,6 @@
 
         <!--spring依赖-->
         <!--spring framework-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-framework-bom</artifactId>
-            <version>${springframework.version}</version>
-        </dependency>
-        <!--spring security-->
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-bom</artifactId>
-            <version>${springframework.security.version}</version>
-        </dependency>
         <!--spring json-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -119,28 +108,6 @@
             <version>0.5</version>
         </dependency>
 
-
-        <!-- aop依赖 -->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjrt</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cglib</groupId>
-            <artifactId>cglib</artifactId>
-        </dependency>
-
-
-        <!--dubbox core-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo</artifactId>
-            <version>${dubbox.version}</version>
-        </dependency>
 
 
         <dependency>
